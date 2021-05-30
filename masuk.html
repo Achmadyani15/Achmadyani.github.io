@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--=============== basic  ===============-->
+    <meta charset="UTF-8" />
+    <title>Halaman Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="robots" content="index, follow" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+
+    <meta name="csrf-token" content="8ZJtEieHgrhXU4byuCY1NljV52LaHl6vz8wHvUJF" />
+    <!--=============== css  ===============-->
+    <link type="text/css" rel="stylesheet" href="https://sibamas.tangerangkab.go.id/backend/css/reset.css" />
+    <link type="text/css" rel="stylesheet" href="https://sibamas.tangerangkab.go.id/backend/css/plugins.css" />
+    <link type="text/css" rel="stylesheet" href="https://sibamas.tangerangkab.go.id/backend/css/style.css" />
+    <link type="text/css" rel="stylesheet" href="https://sibamas.tangerangkab.go.id/backend/css/color.css" />
+    <link type="text/css" rel="stylesheet" href="https://sibamas.tangerangkab.go.id/css/css.css" />
+    <link type="text/css" rel="stylesheet" href="https://sibamas.tangerangkab.go.id/css/csp.css" />
+    <!--=============== favicons ===============-->
+    <link rel="shortcut icon" href="assets/img/profil 2.jpg" />
+
+    <style nonce="o7q0xd1MwxtKU4xYTlKWtcf5KypvKqFJ">
+      section.parallax-section {
+        padding: 150px 0 0px 0px !important;
+      }
+      .hidden {
+        display: none !important;
+      }
+      .show {
+        display: block !important;
+      }
+      .error-line {
+        border: 1px solid red !important;
+      }
+      .error-text {
+        color: red !important;
+      }
+    </style>
+
+    <!-- Matomo -->
+    <script type="text/javascript">
+      var _paq = (window._paq = window._paq || []);
+      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function () {
+        var u = '//monapp.tangerangkab.go.id/';
+        _paq.push(['setTrackerUrl', u + 'matomo.php']);
+        _paq.push(['setSiteId', '5']);
+        var d = document,
+          g = d.createElement('script'),
+          s = d.getElementsByTagName('script')[0];
+        g.type = 'text/javascript';
+        g.async = true;
+        g.src = u + 'matomo.js';
+        s.parentNode.insertBefore(g, s);
+      })();
+    </script>
+    <!-- End Matomo Code -->
+  </head>
+  <body>
+    <!--loader-->
+    <div class="loader-wrap">
+      <div class="pin"></div>
+      <div class="pulse"></div>
+    </div>
+    <!--loader end-->
+    <!-- Main  -->
+    <div id="main">
+      <!-- header-->
+      <header class="main-header dark-header fs-header sticky">
+        <div class="header-inner">
+          <div class="logo-holder">
+            <a href="https://www.instagram.com/achmadyni_/">
+              <img src="assets/img/Profil.jpg" alt="" class="f-left" />
+              <span class="logo-title">ACHMAD YANI</span></a
+            >
+          </div>
+          <div class="nav-button-wrap color-bg">
+            <div class="nav-button"><span></span><span></span><span></span></div>
+          </div>
+          <!--  navigation -->
+          <div class="nav-holder main-menu">
+            <nav>
+              <ul>
+                <li>
+                  <a href="" class="">Beranda</a>
+                </li>
+                <li>
+                  <a href="" class="">Belum ada judul</a>
+                </li>
+                <li>
+                  <a href="" target="_blank">Belum ada Judul</a>
+                </li>
+
+                <li>
+                  <a href="" class="">FAQ</a>
+                </li>
+                <li>
+                  <a href="masuk.html" class="act-link">Login/Registrasi</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <!-- navigation  end -->
+        </div>
+      </header>
+      <!--  header end -->
+      <!-- Content-->
+
+      <!-- Content end-->
+      <!-- wrapper -->
+      <div id="wrapper" class="no-padding">
+        <!-- Content-->
+        <div class="content">
+          <section class="parallax-section" data-scrollax-parent="true">
+            <div class="bg par-elem bg-ps" data-bg="" data-scrollax="properties: { translateY: '30%' }"></div>
+            <div class="overlay"></div>
+            <div class="container">
+              <div class="section-title center-align">
+                <h2>Halaman Login/Registrasi</h2>
+                <div class="breadcrumbs fl-wrap"><a href="">Beranda</a> <span>Login/Registrasi</span></div>
+                <span class="section-separator"></span>
+              </div>
+            </div>
+          </section>
+          <section class="" id="sec1">
+            <div class="container unset-max-width">
+              <div class="row">
+                <div class="col-md-4">&nbsp;</div>
+                <div class="col-md-4">
+                  <div class="list-single-main-item">
+                    <div id="">
+                      <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-6">
+                          <a href="masuk.html" class="btn big-btn color-bg flat-btn mrl-5">Login</a>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-6">
+                          <a href="daftar.html" class="btn big-btn color-bg flat-btn mrl-5">Registrasi</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="list-single-main-item show">
+                    <div id="tab-1" class="row">
+                      <p>Silahkan Masukan NIK dan Password</p>
+                      <div class="custom-form">
+                        <form method="post" name="login-form" id="login-form" data-parsley-validate="" action="https://sibamas.tangerangkab.go.id/user-login-proses">
+                          <input type="hidden" name="_token" value="8ZJtEieHgrhXU4byuCY1NljV52LaHl6vz8wHvUJF" />
+                          <div class="mb-10 f-left w-100">
+                            <label>Username * </label>
+
+                            <input name="nik" type="text" maxlength="16" minlength="16" required data-parsley-error-message="NIK Wajib Diisi" />
+                          </div>
+                          <div class="pt-10 f-left w-100">
+                            <label>Password * </label>
+
+                            <input name="password" type="password" required data-parsley-error-message="Password Wajib Diisi" />
+                          </div>
+                          <div class="mb-10 f-left w-100">
+                            <label>Kode Keamanan *</label>
+                            <div class="row">
+                              <div class="col-md-5"><img src="https://sibamas.tangerangkab.go.id/captcha/default?CgP5zxXh" /></div>
+                              <div class="col-md-7">
+                                <input name="captcha" type="text" required data-parsley-error-message="Kode Keamanan Wajib Diisi" class=""/>
+                                <span class="error-text hidden"> </span>
+                              </div>
+                          <button type="submit" class="btn big-btn color-bg flat-btn pull-right"><span>Masuk</span></button>
+                          <div class="clearfix"></div>
+                          <span class="fw-separator"></span>
+                        </form>
+                      </div>
+
+                <div class="col-md-4">&nbsp;</div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <!-- Content end -->
+      </div>
+      <!-- wrapper end -->
+      <!--footer -->
+      <footer class="main-footer dark-footer pt-10">
+        <div class="sub-footer fl-wrap mt-10">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 text-left">
+                <div class="copyright text-left">&#169; ACHMAD YANI 2021 . Powered By Dinas Komunikasi dan Informatika (Diskominfo) Kabupaten Tangerang.</div>
+              </div>
+              <div class="col-md-4">
+                <div class="footer-social">
+                  <ul>
+                    <li>
+                      <a href="#" target="_blank"><i class="fa fa-facebook-official"></i></a>
+                    </li>
+                    <li>
+                      <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li>
+                      <a href="#" target="_blank"><i class="fa fa-whatsapp"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!--footer end  -->
+      <!--register form -->
+
+      <!--register form end -->
+      <a class="to-top"><i class="fa fa-angle-up"></i></a>
+    </div>
+    <!-- Main end -->
+    <!--=============== scripts  ===============-->
+    <script nonce="o7q0xd1MwxtKU4xYTlKWtcf5KypvKqFJ">
+      var csp_nonce = 'o7q0xd1MwxtKU4xYTlKWtcf5KypvKqFJ';
+    </script>
+    <script type="text/javascript" src="https://sibamas.tangerangkab.go.id/backend/js/jquery.min.js"></script>
+    <script type="text/javascript" src="https://sibamas.tangerangkab.go.id/backend/js/plugins.js"></script>
+    <script type="text/javascript" src="https://sibamas.tangerangkab.go.id/backend/js/scripts.js"></script>
+    <script type="text/javascript" src="https://sibamas.tangerangkab.go.id/js/parsley.min.js"></script>
+    <script type="text/javascript" src="https://sibamas.tangerangkab.go.id/js/jquery.mask.min.js"></script>
+    <script nonce="o7q0xd1MwxtKU4xYTlKWtcf5KypvKqFJ">
+      $(document).ready(function () {
+        $('#submit-btn').on('click', function (event) {
+          event.preventDefault();
+          var isValid = true;
+          $('#form-register input').each(function () {
+            if ($(this).parsley().validate() !== true) isValid = false;
+          });
+          if (isValid) {
+            // alert("OK and Processed!");
+            var ceknik = fn_ceknik($('#nik').val());
+            var cekhp = fn_ceknik($('#nik').val());
+            var cekkk = fn_ceknik($('#no_kk').val());
+            if (ceknik) {
+              if (cekhp) {
+                if (cekkk) $('#form-register').submit();
+              }
+            }
+          }
+        });
+        $('#nik').mask('0000000000000000');
+        $('#nik').on('focusout', function () {
+          fn_ceknik($('#nik').val());
+        });
+        $('#nomor_hp').on('focusout', function () {
+          fn_cekhp($(this).val());
+        });
+        $('#no_kk').on('focusout', function () {
+          fn_cekkk($(this).val());
+        });
+        $('#no_kk').on('blur', function () {
+          fn_cekkk($(this).val());
+        });
+        setTimeout(function () {
+          $('.error-line').removeClass('error-line');
+          $('.error-text').removeClass('show').addClass('hidden');
+        }, 5000);
+
+        // document.getElementById("myButton").addEventListener("click", myFunction);
+      });
+      var loadFile = function (event, selector) {
+        var output = document.getElementById(selector);
+        output.src = URL.createObjectURL(event.target.files[0]);
+        output.onload = function () {
+          URL.revokeObjectURL(output.src); // free memory
+        };
+      };
+
+      function fn_ceknik(nik) {
+        var isvalid = true;
+        $.ajax({
+          url: 'https://sibamas.tangerangkab.go.id/user-cek-nik/' + $('#nik').val(),
+          dataType: 'json',
+          success: function (res) {
+            if (res.status == 1) {
+              // $('#error-nik').text('NIK yang anda input Sudah Terdaftar Sebelumnya');
+              $('#error-nik').text(res.message);
+              $('#error-nik').removeClass('hidden').addClass('show');
+              setTimeout(function () {
+                $('#error-nik').removeClass('show').addClass('hidden');
+              }, 4000);
+
+              isvalid = false;
+            }
+          },
+        });
+        return isvalid;
+      }
+      function fn_cekhp(hp) {
+        var isvalid = true;
+        $.ajax({
+          url: 'https://sibamas.tangerangkab.go.id/user-cek-hp/' + hp,
+          dataType: 'json',
+          success: function (res) {
+            if (res.status == 1) {
+              // $('#error-nik').text('NIK yang anda input Sudah Terdaftar Sebelumnya');
+              $('#error-hp').text(res.message);
+              $('#error-hp').removeClass('hidden').addClass('show');
+              setTimeout(function () {
+                $('#error-hp').removeClass('show').addClass('hidden');
+              }, 5000);
+
+              isvalid = false;
+            }
+          },
+        });
+        return isvalid;
+      }
+      function fn_cekkk(kk) {
+        var isvalid = true;
+        $.ajax({
+          url: 'https://sibamas.tangerangkab.go.id/user-cek-kk/' + kk,
+          dataType: 'json',
+          success: function (res) {
+            if (res.status == 1) {
+              // $('#error-nik').text('NIK yang anda input Sudah Terdaftar Sebelumnya');
+              $('#error-kk').text(res.message);
+              $('#error-kk').removeClass('hidden').addClass('show');
+              setTimeout(function () {
+                $('#error-kk').removeClass('show').addClass('hidden');
+              }, 5000);
+
+              isvalid = false;
+            }
+          },
+        });
+        return isvalid;
+      }
+    </script>
+  </body>
+</html>
